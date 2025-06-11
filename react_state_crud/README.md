@@ -6,7 +6,7 @@ This application is a show case of simple react state (that is useState) managem
 
 ## Home Page
 
-![Home Page](https://github.com/jyotirana93/readme-images/blob/master/react_state_crud_images/add-user-page.png?raw=true)
+![Home Page](https://github.com/jyotirana93/readme-images/blob/master/react_state_crud_images/home-page.png?raw=true)
 
 ---
 
