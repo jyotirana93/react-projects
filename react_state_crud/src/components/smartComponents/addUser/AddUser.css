@@ -1,0 +1,38 @@
+.add-user-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #212121;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.table-container {
+  padding: 2rem;
+  overflow: auto;
+  border-radius: 8px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid white;
+  padding: 10px;
+}
+.edit-user-btn,
+.delete-user-btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 20px;
+}

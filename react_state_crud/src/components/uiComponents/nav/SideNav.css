@@ -1,0 +1,24 @@
+.side-bar-container {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.side-bar-container > a {
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.active {
+  color: orange;
+}
+.inactive {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orange;
+  text-decoration: underline;
+}

@@ -1,0 +1,17 @@
+:root {
+  --font-base: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --main-background-color: #242424;
+  --text-color: rgba(255, 255, 255, 0.87);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-base);
+  color: var(--text-color);
+  background-color: var(--main-background-color);
+}
