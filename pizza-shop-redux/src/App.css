@@ -1,0 +1,31 @@
+.main{
+    margin-top:5rem ;
+    
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+
+}
+
+header>a{
+    background-color: rgb(96, 88, 88);
+    border-radius: 2px;
+    padding: 10px;
+    color: white;
+     font-weight: 500;
+    text-decoration: none;
+
+}
+
+.active-link{
+    background-color: rgb(188, 181, 181);
+    color: rgb(66, 102, 12);
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}

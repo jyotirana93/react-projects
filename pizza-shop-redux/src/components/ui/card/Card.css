@@ -1,0 +1,58 @@
+.card-main{
+    background-color: white;
+    border: 2px solid black;
+    width: 200px;
+    height: 180px;
+    margin: auto;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+   color: black;
+    font-weight: 400;
+}
+
+.card-warning{
+    background-color: #ff0020;
+     color: white;
+    
+}
+
+
+.card-main>button{
+     border:1px solid black;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.card-stage-picked{
+   
+    width: 85px;
+    padding: 8px;
+    
+    border-radius: 8px;
+    background-color: green;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.card-stage-picked-icon{
+    background-color: gray;
+    padding: 2px;
+    margin-left: 5px;
+    border-radius: 50%;
+    font-size: small;
+}
+
+.card-stage-cancelled{
+    background-color: #bdb3bb;
+    border-radius: 8px;
+     width: 85px;
+    padding: 8px;
+}
