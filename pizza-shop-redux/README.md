@@ -1,16 +1,14 @@
-# React + Vite
+# Pizza Shop Redux
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A pizza ordering application built using React, Redux , React Router, and vite.
 
-Currently, two official plugins are available:
+## Live demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[![Edit jyotirana93/react-projects/main](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/github/jyotirana93/react-projects/main?import=true&embed=1&file=%2Freact_state_crud%2Fpackage.json)
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Add/move to next stage/cancel pizzas
+- Redux state management
+- Routing with React Router
+- Persistent order data using Local Storage
