@@ -4,7 +4,11 @@ A pizza ordering application built using React, Redux , React Router, and vite.
 
 ## Live demo
 
-[![Edit jyotirana93/react-projects/main](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/github/jyotirana93/react-projects/main?import=true&embed=1&file=%2Freact_state_crud%2Fpackage.json)
+[![Vercel](https://img.shields.io/badge/Vercel-000?style=for-the-badge&logo=vercel)](https://pizza-shop-redux.vercel.app)
+
+## Edit Code
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/~/github.com/jyotirana93/vercel-pizza-shop-redux)
 
 ## Features
 
