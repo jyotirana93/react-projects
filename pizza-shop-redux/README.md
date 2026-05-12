@@ -8,7 +8,7 @@ A pizza ordering application built using React, Redux , React Router, and vite.
 
 ## Edit Code
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/~/github.com/jyotirana93/stackblitz-pizza-shop-redux)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/jyotirana93/react-projects/tree/main/pizza-shop-redux?file=README.md)
 
 ## Features
 
