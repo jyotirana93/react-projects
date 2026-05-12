@@ -2,12 +2,17 @@ import { useEffect, useRef, useState } from "react";
 import Card from "../../components/ui/card/Card";
 import getStages from "../../utility/getStages";
 import { useDispatch, useSelector } from "react-redux";
-import { getAllPizzas, cancelPizza } from "../../actions/pizzas.action";
+import {
+  getAllPizzas,
+  cancelPizza,
+  removeAllPizzas,
+} from "../../actions/pizzas.action";
 import "./PizzaStagesSection.css";
 
 const PizzaStagesSection = () => {
   const pizzas = useSelector((state) => state.pizzas);
   const dispatch = useDispatch();
+  const [deleteAllPizzas, setDeleteAllPizzas] = useState(false);
 
   const [currentTime, setCurrentTime] = useState(Date.now());
   const intervalID = useRef(null);
@@ -51,6 +56,14 @@ const PizzaStagesSection = () => {
     return () => clearInterval(intervalID.current);
   }, [hasActiveOrder]);
 
+  useEffect(() => {
+    if (deleteAllPizzas && !hasActiveOrder) {
+      localStorage.removeItem("pizzaOrder");
+      localStorage.removeItem("pizzaID");
+      clearInterval(intervalID.current);
+    }
+  }, [deleteAllPizzas]);
+
   const sortedDataOnTimeDelay = [...pizzas].sort((a, b) => {
     const timeA =
       (a?.pickedTime || a.cancelledTime || currentTime) - a?.placedStartTime;
@@ -62,6 +75,13 @@ const PizzaStagesSection = () => {
 
   const cancelHandler = (pizzaID) => {
     dispatch(cancelPizza(pizzaID));
+  };
+
+  const clearAllPizzaHandler = () => {
+    if (!hasActiveOrder) {
+      setDeleteAllPizzas(true);
+      dispatch(removeAllPizzas());
+    }
   };
 
   return (
@@ -262,6 +282,25 @@ const PizzaStagesSection = () => {
                     </td>
                     <td></td>
                   </tr>
+                  {!hasActiveOrder ? (
+                    <tr>
+                      <td colSpan={5}>
+                        <button
+                          style={{
+                            width: "150px",
+                            height: "40px",
+                            fontWeight: "bold",
+                            fontSize: "1rem",
+                          }}
+                          onClick={clearAllPizzaHandler}
+                        >
+                          Clear all pizzas
+                        </button>
+                      </td>
+                    </tr>
+                  ) : (
+                    ""
+                  )}
                 </tfoot>
               </table>
             </div>

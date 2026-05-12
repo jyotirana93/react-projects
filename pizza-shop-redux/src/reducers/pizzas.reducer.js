@@ -55,6 +55,9 @@ export const pizzasReducer = (state = [], action) => {
       });
     }
 
+    case "DELETE_ALL_PIZZAS":
+      return [];
+
     default:
       return state;
   }

@@ -20,3 +20,9 @@ export const cancelPizza = (pizzaId) => {
     },
   };
 };
+
+export const removeAllPizzas = () => {
+  return {
+    type: "DELETE_ALL_PIZZAS",
+  };
+};
